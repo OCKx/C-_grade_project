@@ -16,7 +16,7 @@ class Program
 
     static char GradeStudent(int score)
     {
-        if (score >= 90)
+        if (score >= 90 && score == 100)
         {
             return 'A';
         }
@@ -32,9 +32,13 @@ class Program
         {
             return 'D';
         }
-        else
+        else if (score < 60)
         {
             return 'F';
+        }
+        else
+        {
+            Console.WriteLine("wrong command")
         }
     }
 }
