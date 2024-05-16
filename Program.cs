@@ -16,7 +16,7 @@ class Program
 
     static char GradeStudent(int score)
     {
-        if (score >= 90 && score == 100)
+        if (score >= 90 && score <= 100)
         {
             return 'A';
         }
